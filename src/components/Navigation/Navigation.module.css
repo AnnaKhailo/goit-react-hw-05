@@ -1,0 +1,27 @@
+.navigation {
+  border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  margin-bottom: 24px;
+  width: 1180px;
+}
+
+.navigationList {
+  display: flex;
+  gap: 16px;
+  margin: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  padding-bottom: 18px;
+}
+
+.active {
+  color: #f20909;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

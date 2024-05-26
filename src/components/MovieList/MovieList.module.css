@@ -1,0 +1,38 @@
+.list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px auto;
+  justify-content: center;
+}
+
+.movieItem {
+  width: 240px;
+  border: 1px solid darkgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movieItem:hover {
+  transform: scale(1.04);
+  transition: transform 200ms;
+}
+
+.movieItem h3 {
+  font-size: 16px;
+  color: black;
+  margin-left: 6px;
+}
+
+.movieItem p {
+  font-size: 10px;
+  color: #757474;
+  margin: 2px auto 2px 6px;
+}
+
+.movieItem img {
+  object-fit: cover;
+  height: 310px;
+}

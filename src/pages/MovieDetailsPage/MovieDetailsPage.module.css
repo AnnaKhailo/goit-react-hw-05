@@ -1,0 +1,44 @@
+.movieDetails {
+  display: flex;
+  gap: 20px;
+}
+
+.movieDetails .movieTitle {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.movieDetails p {
+  color: #504f4f;
+  margin-bottom: 10px;
+}
+
+.movieDetails h3 {
+  color: black;
+  margin-bottom: 10px;
+}
+
+.goBackBtn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 8px;
+  border: none;
+  width: 90px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: lightgray;
+  outline: none;
+  margin-bottom: 14px;
+}
+
+.goBackBtn:hover {
+  background-color: #f20909;
+  color: #fff;
+}
