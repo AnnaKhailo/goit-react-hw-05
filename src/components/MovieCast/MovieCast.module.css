@@ -1,0 +1,21 @@
+.castList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 16px auto;
+  justify-content: flex-start;
+}
+
+.castList li {
+  width: 160px;
+}
+
+.castList img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.actorName {
+  font-weight: 600;
+}

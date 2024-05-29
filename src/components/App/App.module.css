@@ -42,7 +42,7 @@
 }
 
 .wrapper {
-  width: 1048px;
+  min-width: 1048px;
   padding-left: 20px;
   padding-right: 20px;
 }
