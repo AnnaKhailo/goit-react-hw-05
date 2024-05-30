@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense, useRef } from "react";
 import {
   Link,
   NavLink,
@@ -18,7 +18,8 @@ export default function MovieDetailsPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
   const location = useLocation();
-  const backLink = location.state?.from ?? "/movies";
+  // const backLink = location.state?.from ?? "/movies";
+  const backLink = useRef(location.state ?? "/movies");
   const defaultImg =
     "https://dl-media.viber.com/10/share/2/long/vibes/icon/image/0x0/95e0/5688fdffb84ff8bed4240bcf3ec5ac81ce591d9fa9558a3a968c630eaba195e0.jpg";
 
@@ -38,7 +39,7 @@ export default function MovieDetailsPage() {
 
   return (
     <div>
-      <Link to={backLink}>
+      <Link to={backLink.current}>
         <button className={css.goBackBtn}>Go back</button>
       </Link>
       {isError && <p>Oops! There was an error! Try again!</p>}
